@@ -1,0 +1,14 @@
+  
+<p>contactus works!</p>
+<form class ="boom">
+    <p>{{error}}</p>
+    <label>Name:</label>
+    <input type ="text" name = "name" [(ngModel)] ="name">
+    <br><br>
+    <label>Email:</label>
+    <input type ="email" name = "email" [(ngModel)] ="email">
+    <label>Message:</label>
+    <input type ="text" name = "message" [(ngModel)] ="message">
+    <input type="button" value= "Login" (click) = "validate()">
+
+</form>

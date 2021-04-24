@@ -1,0 +1,15 @@
+<div >
+    <div >
+          <p *ngIf= "error.length != 0">{{error}}</p>
+      </div>
+      <form #myForm="ngForm" (ngSubmit)="validate(myForm)">
+        <label>Username:</label>
+        <input type ="text" name = "username" [(ngModel)] ="username">
+        <br><br>
+        <label>Password:</label>
+        <input type ="password" name = "password" [(ngModel)] ="password">
+        <input type="button" value= "Login" (click) = "validate()">
+      </form>
+    </div>
+  </div>
+  
